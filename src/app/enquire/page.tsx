@@ -9,21 +9,21 @@ import { SITE } from "@/lib/site";
 const path = "/enquire";
 
 export const metadata = buildMetadata({
-  title: "Enquire / Contact",
-  description: "Get in touch about Klaipėda cruise planning — shore excursions, Curonian Spit tours, CruiseFlex and return-to-ship questions.",
+  title: "Talk to a Planner",
+  description: "Ask us anything about your Klaipėda port day — ship schedule, Old Town vs Curonian Spit, walking, independence. No sales pitch, just honest advice.",
   path,
 });
 
 const breadcrumbs = [
   { name: "Home", path: "/" },
-  { name: "Enquire", path },
+  { name: "Talk to a Planner", path },
 ];
 
 export default function EnquirePage() {
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Enquire / Contact", description: "Get in touch about Klaipėda cruise planning.", path })]} />
-      <PageHero title="Enquire / Contact" subtitle="Questions about your Klaipėda port day, shore excursions or CruiseFlex? Tell us your ship and interests and we'll point you in the right direction." compact />
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Talk to a Planner", description: "Get honest Klaipėda port day advice.", path })]} />
+      <PageHero title="Talk to a planner" subtitle="Stuck between the Old Town and the Curonian Spit? Not sure if your port window is long enough? Ask us — we're here to help you decide, not sell you something." compact />
       <section className="section-padding">
         <div className="container-wide max-w-xl">
           <Breadcrumbs items={breadcrumbs} />
@@ -41,10 +41,10 @@ export default function EnquirePage() {
               <input id="ship" name="ship" type="text" placeholder="e.g. MSC Euribia — 15 July 2026" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-              <textarea id="message" rows={5} placeholder="Tell us your port window, interests (Old Town, Curonian Spit, private tour…) and any mobility needs." className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">What are you trying to decide?</label>
+              <textarea id="message" rows={5} placeholder="Tell us your port window, what you're weighing up, and any mobility or family considerations." className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
             </div>
-            <button type="submit" className="btn-primary">Send enquiry</button>
+            <button type="submit" className="btn-primary">Send message</button>
           </form>
           <p className="mt-4 text-sm text-gray-600">Or email us directly at <a href={`mailto:${SITE.email}`} className="text-coastal-700 hover:underline">{SITE.email}</a></p>
           <div className="mt-12"><PlanningLinks /></div>

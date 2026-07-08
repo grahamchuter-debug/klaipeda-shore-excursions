@@ -10,7 +10,7 @@ const path = "/klaipeda-cruise-planner";
 const image = subjectImages.planner;
 
 const description =
-  "Tell us your ship, arrival and departure times — get a tailored Klaipėda shore excursion recommendation for your Baltic port day.";
+  "Tell us your ship, arrival and departure times — get honest advice on how to spend your Klaipėda port day, matched to your hours ashore.";
 
 export const metadata = buildMetadata({
   title: "Klaipėda Cruise Planner",
@@ -18,12 +18,12 @@ export const metadata = buildMetadata({
   path,
   image: image.src,
   imageAlt: image.alt,
-  keywords: ["Klaipėda cruise planner", "plan Klaipėda port day", "Klaipėda shore excursion planner"],
+  keywords: ["Klaipėda cruise planner", "plan Klaipėda port day", "Klaipėda shore day planner"],
 });
 
 const breadcrumbs = [
   { name: "Home", path: "/" },
-  { name: "Klaipėda Cruise Planner", path },
+  { name: "Cruise Planner", path },
 ];
 
 export default function KlaipedaCruisePlannerPage() {
@@ -32,9 +32,9 @@ export default function KlaipedaCruisePlannerPage() {
       <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Klaipėda Cruise Planner", description, path })]} />
       <PhotoHeroBand
         image={image}
-        eyebrow="Ship-aware planning"
-        title="Klaipėda Cruise Planner"
-        subtitle="Tell us your ship, arrival time and departure time — we'll recommend the best Klaipėda shore excursion for your day in port."
+        eyebrow="Plan around your ship"
+        title="Let's figure out your Klaipėda day together"
+        subtitle="Your ship, your hours ashore, your pace — tell us what you're working with and we'll point you in the right direction."
         compact
       />
       <KlaipedaCruisePlannerSection />

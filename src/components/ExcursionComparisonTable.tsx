@@ -5,18 +5,18 @@ export function ExcursionComparisonTable() {
   return (
     <section className="section-padding bg-white" id="which-excursion">
       <div className="container-wide">
-        <p className="section-eyebrow">Decision guide</p>
-        <h2 className="section-title mt-2">Which excursion is right for you?</h2>
+        <p className="section-eyebrow">The honest matchmaker</p>
+        <h2 className="section-title mt-2">What kind of day suits you?</h2>
         <p className="section-subtitle">
-          An honest matchmaker — not every passenger needs the Curonian Spit, and not every day suits a private tour. Find the excursion that genuinely fits your situation.
+          Not everyone needs the Curonian Spit. Not everyone needs a private vehicle. Tell us who you are and we&apos;ll tell you what tends to work — no brochure nonsense.
         </p>
         <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200 shadow-md">
           <div className="overflow-x-auto">
             <table className="comparison-table w-full min-w-[640px] text-left">
               <thead>
                 <tr className="border-b border-gray-200 bg-coastal-50">
-                  <th className="px-6 py-4 text-sm font-semibold text-coastal-900">Your situation</th>
-                  <th className="px-6 py-4 text-sm font-semibold text-coastal-900">We recommend</th>
+                  <th className="px-6 py-4 text-sm font-semibold text-coastal-900">If this sounds like you…</th>
+                  <th className="px-6 py-4 text-sm font-semibold text-coastal-900">This day tends to work</th>
                   <th className="hidden px-6 py-4 text-sm font-semibold text-coastal-900 md:table-cell">Why</th>
                 </tr>
               </thead>
@@ -45,11 +45,11 @@ export function ExcursionComparisonTable() {
           </div>
         </div>
         <p className="mt-6 text-sm text-gray-500">
-          Still unsure?{" "}
+          Still weighing it up?{" "}
           <Link href="#cruise-planner" className="font-medium text-coastal-700 hover:text-maple-600">
             Tell us your ship and schedule
           </Link>{" "}
-          — our planner will recommend the best fit.
+          — we&apos;ll point you in the right direction.
         </p>
       </div>
     </section>

@@ -3,9 +3,9 @@ import Link from "next/link";
 const PRIVATE_SUIT = [
   "Want flexibility over a fixed coach timetable",
   "Love photography and need time for the right light",
-  "Have mobility considerations that group tours cannot accommodate",
+  "Have mobility considerations that group formats struggle with",
   "Travel with family and need breaks on your schedule",
-  "Prefer a quieter experience without a bus full of strangers",
+  "Prefer a quieter day without a bus full of strangers",
 ];
 
 export function PrivateTourGuidance() {
@@ -13,11 +13,11 @@ export function PrivateTourGuidance() {
     <section className="section-padding bg-white" id="private-tour-guidance">
       <div className="container-wide">
         <div className="mx-auto max-w-4xl">
-          <p className="section-eyebrow">Honest advice</p>
-          <h2 className="section-title mt-2">Should you choose a private tour?</h2>
+          <p className="section-eyebrow">The honest answer</p>
+          <h2 className="section-title mt-2">Do you actually need a private day?</h2>
           <div className="mt-10 grid gap-8 lg:grid-cols-2">
             <div className="card-feature">
-              <h3 className="font-display text-xl font-bold text-gray-900">Private tours are perfect if you...</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900">A private day makes sense if you…</h3>
               <ul className="mt-5 space-y-3">
                 {PRIVATE_SUIT.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-gray-700">
@@ -28,19 +28,19 @@ export function PrivateTourGuidance() {
               </ul>
             </div>
             <div className="card-accent">
-              <h3 className="font-display text-xl font-bold text-gray-900">However...</h3>
+              <h3 className="font-display text-xl font-bold text-gray-900">But honestly…</h3>
               <p className="mt-5 text-sm leading-relaxed text-gray-700">
-                Many cruise passengers are perfectly served by the city walking tour. It covers the essential Old Town, harbour and heritage in 3–4 hours with high return confidence — without the premium of a private vehicle.
+                Most first-time visitors don&apos;t need one. A morning in the Old Town on foot covers the essentials in 3–4 hours, keeps you close to the ship, and costs a fraction of a private vehicle.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-gray-700">
-                We recommend whichever genuinely suits your day, not whichever costs more. If you are a first-time visitor with a standard port call and no special requirements, the city tour is likely your best choice.
+                We&apos;d rather tell you that now than sell you something you don&apos;t need. Private is brilliant when it&apos;s brilliant. The city day is brilliant more often than people think.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link href="/shore-excursions/private-klaipeda-tour" className="btn-secondary text-sm">
-                  Private tour details
+                  When private makes sense
                 </Link>
                 <Link href="/shore-excursions/klaipeda-city-walking-tour" className="text-sm font-semibold text-maple-600 hover:text-maple-700">
-                  City tour instead →
+                  The simpler city day →
                 </Link>
               </div>
             </div>

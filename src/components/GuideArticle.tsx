@@ -167,11 +167,11 @@ export function GuideArticle({ guide }: { guide: GuidePage }) {
           {relatedExcursion && (
             <div className="mt-10 card-accent flex flex-wrap items-center justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-maple-600">Prefer a guided tour?</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-maple-600">If you&apos;d rather not DIY it</p>
                 <h2 className="mt-1 font-display text-xl font-bold text-gray-900">{relatedExcursion.title}</h2>
                 <p className="mt-1 text-sm text-gray-600">{relatedExcursion.tagline}</p>
               </div>
-              <Link href={`/shore-excursions/${relatedExcursion.slug}`} className="btn-primary shrink-0">View excursion</Link>
+              <Link href={`/shore-excursions/${relatedExcursion.slug}`} className="btn-primary shrink-0">See how this day works</Link>
             </div>
           )}
 

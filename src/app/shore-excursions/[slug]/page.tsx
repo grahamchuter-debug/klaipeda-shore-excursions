@@ -106,13 +106,13 @@ export default async function ExcursionDetailPage({ params }: { params: Promise<
           )}
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <Link href="/klaipeda-cruise-planner" className="btn-primary">Build my cruise plan</Link>
-            <Link href="/enquire" className="btn-secondary">Enquire about this excursion</Link>
+            <Link href="/klaipeda-cruise-planner" className="btn-primary">Plan around my ship</Link>
+            <Link href="/enquire" className="btn-secondary">Ask a planner about this day</Link>
           </div>
 
           {related.length > 0 && (
             <div className="mt-12">
-              <h2 className="section-title text-2xl mb-6">Related excursions</h2>
+              <h2 className="section-title text-2xl mb-6">Other days worth considering</h2>
               <div className="grid gap-6 sm:grid-cols-3">
                 {related.map((r) => r && (
                   <Link key={r.slug} href={`/shore-excursions/${r.slug}`} className="card-editorial group overflow-hidden">

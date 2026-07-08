@@ -11,7 +11,7 @@ export function CruiseSnapshotCard({ snapshot }: { snapshot: CruiseSnapshot }) {
 
   return (
     <div className="card-accent mb-8">
-      <h2 className="font-display text-xl font-bold text-gray-900">Cruise passenger snapshot</h2>
+      <h2 className="font-display text-xl font-bold text-gray-900">What you need to know before deciding</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         <div><p className="text-xs font-semibold uppercase tracking-wide text-coastal-600">Duration</p><p className="mt-1 text-sm font-medium text-gray-900">{snapshot.duration}</p></div>
         <div><p className="text-xs font-semibold uppercase tracking-wide text-coastal-600">Distance from port</p><p className="mt-1 text-sm font-medium text-gray-900">{snapshot.distanceFromPort}</p></div>
@@ -25,15 +25,15 @@ export function CruiseSnapshotCard({ snapshot }: { snapshot: CruiseSnapshot }) {
   );
 }
 
-export function EnquiryCTA({ heading = "Need help choosing?" }: { heading?: string }) {
+export function EnquiryCTA({ heading = "Still not sure?" }: { heading?: string }) {
   return (
     <div className="card-accent mt-10 flex flex-wrap items-center justify-between gap-4">
       <div>
         <p className="text-xs font-semibold uppercase tracking-wide text-maple-600">{heading}</p>
-        <h2 className="mt-1 font-display text-xl font-bold text-gray-900">Tell us your ship and interests</h2>
-        <p className="mt-1 text-sm text-gray-600">We match Klaipėda shore excursions to your port window with honest return-to-ship advice — Old Town, Curonian Spit and private options.</p>
+        <h2 className="mt-1 font-display text-xl font-bold text-gray-900">Tell us your ship and we&apos;ll help you choose</h2>
+        <p className="mt-1 text-sm text-gray-600">No sales pitch. Just honest advice from people who plan port days for a living.</p>
       </div>
-      <Link href="/enquire" className="btn-primary shrink-0">Enquire</Link>
+      <Link href="/enquire" className="btn-primary shrink-0">Talk to a planner</Link>
     </div>
   );
 }

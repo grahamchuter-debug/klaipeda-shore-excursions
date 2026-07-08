@@ -22,11 +22,11 @@ export const metadata = buildMetadata({
   description: SITE.description,
   path: "/",
   keywords: [
-    "Klaipėda shore excursions",
-    "Curonian Spit cruise excursion",
-    "Klaipėda Old Town tour",
-    "Lithuania cruise port",
-    "Baltic cruise excursions",
+    "Klaipėda cruise port planner",
+    "Klaipėda port day guide",
+    "Curonian Spit cruise planning",
+    "Klaipėda Old Town",
+    "Baltic cruise port planning",
   ],
 });
 
@@ -60,7 +60,7 @@ export default function HomePage() {
       <KlaipedaCruisePlannerSection />
       <section className="section-padding bg-white">
         <div className="container-wide max-w-4xl">
-          <FAQSection faqs={faqs} title="Klaipėda Cruise Excursion FAQs" />
+          <FAQSection faqs={faqs} title="Questions fellow cruisers actually ask" />
         </div>
       </section>
       <FinalCTA />

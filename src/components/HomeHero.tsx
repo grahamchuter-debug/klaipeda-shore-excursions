@@ -13,25 +13,25 @@ export function HomeHero() {
       <div className="hero-overlay" aria-hidden="true" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,255,255,0.06),transparent_60%)]" aria-hidden="true" />
       <div className="container-wide relative z-10 px-4 sm:px-6 lg:px-8">
-        <p className="section-eyebrow mb-3 text-coastal-100/90">Baltic cruise port · Lithuania</p>
+        <p className="section-eyebrow mb-3 text-coastal-100/90">Klaipėda cruise port · Lithuania</p>
         <h1 className="home-hero-heading">
           Find the Best Version of Your Day Ashore in Klaipėda
         </h1>
         <p className="mt-5 max-w-2xl font-display text-xl font-medium leading-snug text-white/95 sm:text-2xl">
-          A port city where Baltic light meets centuries of harbour life — and where the right day ashore depends on more than a brochure headline.
+          Most port websites want to sell you a tour. We&apos;d rather help you choose a brilliant day — then decide later if you want someone to organise it.
         </p>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
-          Klaipėda offers charming old streets shaped by German heritage, Lithuania&apos;s beautiful coastline and the spectacular Curonian Spit — a UNESCO sand peninsula unlike anywhere else on your cruise. We help you choose the day that fits your ship, your pace and what you actually want from Lithuania.
+          Old Town lanes and German heritage. A harbour that still feels alive. And the Curonian Spit — a UNESCO sand peninsula unlike anywhere else on your itinerary. The question isn&apos;t whether Klaipėda is worth your time. It&apos;s how to spend the hours you actually have.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link href="#recommendations" className="btn-accent">
-            Explore Recommended Experiences
+          <Link href="/#which-excursion" className="btn-accent">
+            Help me choose my day
           </Link>
           <Link
             href="#cruise-planner"
             className="btn-secondary border-white/30 bg-white/10 text-white hover:bg-white/20"
           >
-            Plan My Perfect Port Day
+            Plan around my ship
           </Link>
         </div>
       </div>

@@ -66,7 +66,7 @@ export const excursions: ExcursionPage[] = [
     },
     featured: true,
     badges: ["editors-choice", "best-first-time", "our-favourite"],
-    editorialNote: "Best for first-time visitors — the essential introduction to Klaipėda's character and harbour life.",
+    editorialNote: "Choose this if it's your first visit and you want the essential Old Town story without committing a full day.",
     experiencePath: "editors-choice",
   },
   {
@@ -135,7 +135,7 @@ export const excursions: ExcursionPage[] = [
     },
     featured: true,
     badges: ["best-scenic", "best-photography"],
-    editorialNote: "Best photography — golden dunes, pine forest and lagoon light that photographers dream about.",
+    editorialNote: "Choose this if you have six hours or more and care more about dunes and light than cobblestones.",
     experiencePath: "curonian-spit",
   },
   {
@@ -198,7 +198,7 @@ export const excursions: ExcursionPage[] = [
     },
     featured: true,
     badges: ["best-families"],
-    editorialNote: "Perfect for families — flexible pacing, private vehicle and an itinerary built around your group.",
+    editorialNote: "Choose this when your group needs its own pace — families, photographers, or anyone who hates coach timetables.",
     experiencePath: "private-experience",
   },
   {
@@ -260,7 +260,7 @@ export const excursions: ExcursionPage[] = [
     },
     featured: true,
     badges: ["best-independent-day", "best-relaxing", "best-value"],
-    editorialNote: "Most relaxing — coffee, harbour air and time to simply enjoy being ashore.",
+    editorialNote: "Choose this if you want atmosphere over itinerary — coffee, harbour air, and time to simply be ashore.",
     experiencePath: "relaxed-day",
   },
   {
@@ -320,7 +320,7 @@ export const excursions: ExcursionPage[] = [
     },
     featured: true,
     badges: ["best-history"],
-    editorialNote: "Our favourite for culture lovers — architecture, history and the stories behind the lanes.",
+    editorialNote: "Choose this if history and architecture matter more to you than covering distance.",
     experiencePath: "historic-klaipeda",
   },
 ];

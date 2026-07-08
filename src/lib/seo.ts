@@ -35,9 +35,9 @@ export function buildMetadata({
     title: path === "/" ? { absolute: ogTitle } : title,
     description,
     keywords: [
-      "Klaipėda shore excursions",
-      "Klaipėda cruise port",
-      "Curonian Spit tour",
+      "Klaipėda cruise port planner",
+      "Klaipėda port day guide",
+      "Curonian Spit planning",
       "Klaipėda Old Town",
       ...keywords,
     ],

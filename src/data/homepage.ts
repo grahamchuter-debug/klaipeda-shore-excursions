@@ -3,12 +3,12 @@ import type { ExperiencePath, FAQ } from "./types";
 export const experiencePaths: ExperiencePath[] = [
   {
     id: "editors-choice",
-    label: "Editor's Choice",
-    shortLabel: "Editor's pick",
+    label: "Not sure where to start?",
+    shortLabel: "Start here",
     description:
-      "Our recommended all-round excursion for a first visit — the Klaipėda City Walking Tour covers Old Town charm, German heritage architecture and harbour atmosphere in a single, well-paced morning. We suggest this when you want one trusted recommendation rather than comparing every option.",
-    suits: "Perfect first visit — the best introduction to Klaipėda without overcommitting your port day",
-    scrollTo: "#tour-klaipeda-city-walking-tour",
+      "If this is your first time in Klaipėda and you want one clear answer: a slow morning in the Old Town — Theatre Square, fachwerk lanes, harbour air — covers the essentials without overcommitting your port day. It's the day we'd talk a friend through.",
+    suits: "First visit · Unsure · Want one confident recommendation",
+    scrollTo: "#editors-recommendation",
   },
   {
     id: "historic-klaipeda",
@@ -123,7 +123,7 @@ export const planningTopics: PlanningTopic[] = [
     id: "curonian-spit",
     title: "Should I visit the Curonian Spit?",
     content:
-      "If you have six or more usable hours ashore and any interest in nature or photography, yes — it is the experience that defines this region. The UNESCO sand dunes, pine forests and Nida fishing village are extraordinary. However, on shorter port calls (under 6 hours), the ferry crossing and coach time make it tight. In that case, the city walking tour delivers more value per hour. Be honest about your port window before committing.",
+      "If you have six or more usable hours ashore and any interest in nature or photography, yes — it is the experience that defines this region. The UNESCO sand dunes, pine forests and Nida fishing village are extraordinary. However, on shorter port calls (under 6 hours), the ferry crossing and coach time make it tight. In that case, stay in the Old Town and enjoy it properly. Be honest about your port window before committing.",
   },
   {
     id: "independent",
@@ -133,15 +133,15 @@ export const planningTopics: PlanningTopic[] = [
   },
   {
     id: "short-calls",
-    title: "Best excursion for short port calls",
+    title: "What works on a short port call?",
     content:
-      "On calls under 5 usable hours, choose the Klaipėda City Walking Tour or Relaxed Old Town & Harbour Day. Both keep you close to the ship, minimise transfer risk and deliver the essential Klaipėda experience. Do not attempt the Curonian Spit — you will spend more time in transit than enjoying the landscape. Late arrivals should default to the city tour every time.",
+      "Under five usable hours? Stay close. A morning in the Old Town or a relaxed harbour wander keeps transfer risk low and still feels like a proper day ashore. Do not attempt the Curonian Spit — you'll spend more time in transit than enjoying it. Late arrivals should default to the city every time.",
   },
   {
     id: "long-calls",
-    title: "Best excursion for long port calls",
+    title: "What works on a long port call?",
     content:
-      "With 7–8+ usable hours, the Curonian Spit & Nida Tour is the headline experience — dunes, forest, Nida village and lagoon views. Alternatively, a private tour combining Old Town morning with Spit afternoon offers the most complete day. Long calls are also when the Historic Highlights Tour makes sense for culture enthusiasts who want museum depth as well as scenery.",
+      "With seven or eight hours ashore, the Curonian Spit becomes realistic — dunes, forest, Nida village, lagoon light. Alternatively, combine an Old Town morning with a Spit afternoon if you want the full picture. Culture enthusiasts with time to spare should add museum depth rather than rushing both.",
   },
   {
     id: "weather",
@@ -195,7 +195,7 @@ export const planningArticles: PlanningArticle[] = [
   },
   {
     slug: "klaipeda-port-day-by-duration",
-    title: "Best excursions for short and long port calls",
+    title: "Best days for short and long port calls",
     description:
       "Realistic choices for 4-hour, 6-hour and 8+ hour windows — what fits, what to skip, and return margin.",
     href: "/klaipeda-port-day-by-duration",
@@ -205,9 +205,9 @@ export const planningArticles: PlanningArticle[] = [
 export function getHomepageFaqs(): FAQ[] {
   return [
     {
-      question: "What is the best shore excursion from Klaipėda?",
+      question: "How should I spend my day in Klaipėda?",
       answer:
-        "For most first-time visitors, the Klaipėda City Walking Tour is our top recommendation — it covers Old Town, harbour and heritage in 3–4 hours with high return confidence. If you have a full port day (6+ hours) and love nature, the Curonian Spit & Nida Tour is the standout experience. See our comparison table on the homepage to match your situation to the right excursion.",
+        "That depends on your hours ashore and what you enjoy. First visit with limited time? The Old Town and harbour on foot. Full day and love nature? The Curonian Spit. Our comparison table on the homepage matches situations to days that tend to work — start there rather than with a tour brochure.",
     },
     {
       question: "How far is the Curonian Spit from Klaipėda cruise port?",
@@ -220,9 +220,9 @@ export function getHomepageFaqs(): FAQ[] {
         "Yes — the Old Town is roughly 10–15 minutes on foot from the cruise terminal, or a few minutes by taxi. Theatre Square and the main historic lanes are easy to reach independently.",
     },
     {
-      question: "How much time do I need for a Klaipėda shore excursion?",
+      question: "How much time do I need ashore in Klaipėda?",
       answer:
-        "City walking tours need 3–4 hours. The Relaxed Old Town day needs 4–5 hours. Curonian Spit tours need 6–7 hours. Private tours range from half-day city visits to full-day Spit combinations. Always build 30 minutes before your all-aboard time.",
+        "A meaningful Old Town morning needs 3–4 hours. A relaxed harbour day needs 4–5. The Curonian Spit needs 6–7. Always build 30 minutes before all-aboard — experienced cruisers know that margin is not optional.",
     },
     {
       question: "What happens if my ship arrives late?",
@@ -230,19 +230,19 @@ export function getHomepageFaqs(): FAQ[] {
         "Late arrivals favour local options — city walking tours and relaxed harbour days tolerate compressed schedules far better than Curonian Spit transfers. Contact your excursion provider immediately; reputable operators adjust or offer alternatives.",
     },
     {
-      question: "Should I book through the cruise line or independently?",
+      question: "Should I book through the cruise line or go independent?",
       answer:
-        "Independent excursions are often better value, may offer smaller groups, and include optional CruiseFlex flexible cancellation. The cruise line guarantees return if their tour runs late — reputable independent operators also monitor ship departures. We help you weigh both honestly.",
+        "Both can work. The cruise line guarantees return if their organised day runs late. Independent options are often better value and may offer smaller groups. Reputable local operators monitor your ship too. We help you weigh it honestly — the right answer depends on your risk tolerance and your day.",
     },
     {
       question: "What is CruiseFlex?",
       answer:
-        "CruiseFlex is an optional booking upgrade that lets you cancel your excursion for any reason up to 24 hours before departure. No medical certificates, no paperwork, no complicated claims. It costs €5 / £5 / $5 per person and is available on selected excursions.",
+        "Optional flexibility on selected organised days. For €5 / £5 / $5 per person, you can cancel up to 24 hours before — any reason, no paperwork. Useful when your plans might change. We mention it because it helps you decide with confidence, not because we're pushing a product.",
     },
     {
-      question: "Is a private tour worth it in Klaipėda?",
+      question: "Is a private day worth it?",
       answer:
-        "For families, photographers, returning visitors or passengers with mobility considerations — often yes. For a straightforward first visit with no special requirements, the city walking tour serves most passengers perfectly well. We recommend whichever genuinely suits your day.",
+        "For families, photographers, returning visitors or anyone with mobility needs — often yes. For a straightforward first visit? Probably not. The Old Town on foot serves most people brilliantly. We'd rather say that upfront than sell you something you don't need.",
     },
   ];
 }

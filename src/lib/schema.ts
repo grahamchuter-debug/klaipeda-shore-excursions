@@ -95,11 +95,11 @@ export function travelAgencySchema() {
       },
     },
     knowsAbout: [
-      "Klaipėda shore excursions",
-      "Curonian Spit tours",
-      "Klaipėda Old Town tours",
-      "Baltic cruise ports",
-      "Independent shore excursions",
+      "Klaipėda cruise port planning",
+      "Curonian Spit port days",
+      "Klaipėda Old Town",
+      "Baltic cruise port guides",
+      "Independent cruise planning",
     ],
     contactPoint: {
       "@type": "ContactPoint",

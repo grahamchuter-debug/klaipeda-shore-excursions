@@ -50,12 +50,12 @@ export function KlaipedaCruisePlannerSection() {
       <div className="section-padding relative z-10 text-white">
         <div className="container-wide">
           <div className="mx-auto max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-coastal-300">AI cruise planner — coming soon</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-coastal-300">Your port day, sorted — coming soon</p>
             <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl lg:text-5xl">
-              Tell us your ship.<br className="hidden sm:block" /> We&apos;ll recommend your perfect day ashore.
+              Tell us your ship.<br className="hidden sm:block" /> We&apos;ll help you choose the right day.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-white/85">
-              Ship, schedule, walking ability and interests — we are building an AI planner that matches your exact port window to the right Klaipėda experience. For now, explore the form below and browse our editorial recommendations.
+              Ship, schedule, walking ability, interests — we&apos;re building a planner that matches your actual port window to the day that fits. No upsell. No brochure logic. Just a straight answer from someone who knows this port.
             </p>
 
             <form onSubmit={handleSubmit} className="mt-10 space-y-5 rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
@@ -126,19 +126,19 @@ export function KlaipedaCruisePlannerSection() {
                 </div>
               </fieldset>
               <button type="submit" className="btn-accent w-full sm:w-auto">
-                Get my recommendation
+                Help me choose my day
               </button>
             </form>
 
             {submitted && (
               <div className="mt-6 rounded-xl border border-maple-400/30 bg-maple-500/10 p-5">
-                <p className="font-semibold text-maple-200">Thanks — your planner request is noted.</p>
+                <p className="font-semibold text-maple-200">Got it — we&apos;ve noted your details.</p>
                 <p className="mt-2 text-sm text-white/80">
-                  Full AI recommendations are coming soon. For now, browse our{" "}
-                  <Link href="/shore-excursions" className="font-medium text-maple-300 underline hover:text-maple-200">editorial excursion picks</Link>{" "}
-                  or use our{" "}
-                  <Link href="/#which-excursion" className="font-medium text-maple-300 underline hover:text-maple-200">comparison guide</Link>{" "}
-                  to match your {arrival && departure ? `${arrival}–${departure}` : "schedule"}.
+                  Full smart recommendations are coming soon. Right now, use our{" "}
+                  <Link href="/#which-excursion" className="font-medium text-maple-300 underline hover:text-maple-200">decision guide</Link>{" "}
+                  or{" "}
+                  <Link href="/shore-excursions" className="font-medium text-maple-300 underline hover:text-maple-200">compare your options</Link>{" "}
+                  for your {arrival && departure ? `${arrival}–${departure}` : "schedule"}.
                 </p>
               </div>
             )}

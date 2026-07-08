@@ -6,10 +6,10 @@ export function ExperiencePathSelector() {
   return (
     <section className="section-padding bg-coastal-50/60" id="experience-paths">
       <div className="container-wide">
-        <p className="section-eyebrow">Choose your experience</p>
-        <h2 className="section-title mt-2">How would you like to experience Klaipėda?</h2>
+        <p className="section-eyebrow">Start with the right question</p>
+        <h2 className="section-title mt-2">What kind of day are you actually after?</h2>
         <p className="section-subtitle">
-          Five genuinely different ways to spend your day ashore — each with editorial guidance on why it might be right for you, not just what it includes.
+          Five genuinely different ways to spend your hours ashore. Pick the mood that matches you — we&apos;ll explain what works, what doesn&apos;t, and why.
         </p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {experiencePaths.map((path, index) => {
@@ -30,7 +30,7 @@ export function ExperiencePathSelector() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-coastal-900/70 via-coastal-900/20 to-transparent" aria-hidden="true" />
                   {isEditorsChoice && (
-                    <span className="absolute left-4 top-4 pill-accent bg-maple-500/90 text-white">Editor&apos;s Choice</span>
+                    <span className="absolute left-4 top-4 pill-accent bg-maple-500/90 text-white">If you&apos;re unsure, start here</span>
                   )}
                   <span className="absolute bottom-4 left-4 font-display text-3xl font-bold text-white/20">
                     {String(index + 1).padStart(2, "0")}
@@ -43,7 +43,7 @@ export function ExperiencePathSelector() {
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">{path.description}</p>
                   <p className="mt-4 text-xs font-medium tracking-wide text-coastal-700">{path.suits}</p>
                   <span className="mt-5 inline-flex items-center text-sm font-semibold text-maple-600">
-                    Read our guidance
+                    See if this fits your day
                     <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>

@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { siteImages } from "@/lib/images";
+import { SITE } from "@/lib/site";
 
 const navItems = [
-  { href: "/shore-excursions", label: "Shore Excursions" },
   { href: "/klaipeda-city-vs-curonian-spit", label: "Plan Your Day" },
+  { href: "/shore-excursions", label: "Your Options" },
   { href: "/klaipeda-cruise-port-guide", label: "Port Guide" },
   { href: "/klaipeda-cruise-planner", label: "Cruise Planner" },
   { href: "/faq", label: "FAQ" },
@@ -26,8 +27,8 @@ export function Header() {
             height={40}
           />
           <div className="hidden sm:block">
-            <div className="font-display text-lg font-bold text-coastal-800 leading-tight">Klaipėda Shore</div>
-            <div className="text-xs text-gray-500 -mt-0.5">Baltic cruise excursions</div>
+            <div className="font-display text-lg font-bold text-coastal-800 leading-tight">Klaipėda Port</div>
+            <div className="text-xs text-gray-500 -mt-0.5">{SITE.tagline}</div>
           </div>
         </Link>
         <nav className="hidden xl:flex items-center gap-1" aria-label="Main navigation">
@@ -36,7 +37,7 @@ export function Header() {
           ))}
         </nav>
         <div className="hidden xl:block">
-          <Link href="/enquire" className="btn-accent text-sm">Enquire</Link>
+          <Link href="/enquire" className="btn-accent text-sm">Talk to us</Link>
         </div>
         <button type="button" className="xl:hidden rounded-lg p-2 text-gray-700 hover:bg-coastal-50" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -50,7 +51,7 @@ export function Header() {
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-coastal-50" onClick={() => setOpen(false)}>{item.label}</Link>
             ))}
-            <Link href="/enquire" className="rounded-lg px-4 py-3 text-sm font-semibold text-maple-600 hover:bg-coastal-50" onClick={() => setOpen(false)}>Enquire</Link>
+            <Link href="/enquire" className="rounded-lg px-4 py-3 text-sm font-semibold text-maple-600 hover:bg-coastal-50" onClick={() => setOpen(false)}>Talk to us</Link>
           </div>
         </nav>
       )}

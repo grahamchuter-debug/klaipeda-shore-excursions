@@ -11,38 +11,38 @@ import { excursions } from "@/data/excursions";
 import { excursionsHubImage } from "@/lib/images";
 
 export const metadata = buildMetadata({
-  title: "Klaipėda Shore Excursions",
+  title: "Ways to Spend Your Day in Klaipėda",
   description:
-    "Klaipėda shore excursions for cruise passengers — Old Town tours, Curonian Spit, private options and relaxed days with editorial badges and cruise-timed return advice.",
+    "Compare your Klaipėda port day options — Old Town, Curonian Spit, private days and relaxed harbour wanders. Honest guidance on who each suits and how long it needs.",
   path: "/shore-excursions",
   image: excursionsHubImage.src,
   imageAlt: excursionsHubImage.alt,
-  keywords: ["Klaipėda shore excursions", "Curonian Spit tour", "Klaipėda Old Town tour"],
+  keywords: ["Klaipėda port day options", "Curonian Spit planning", "Klaipėda Old Town guide"],
 });
 
 const breadcrumbs = [
   { name: "Home", path: "/" },
-  { name: "Shore Excursions", path: "/shore-excursions" },
+  { name: "Your Options", path: "/shore-excursions" },
 ];
 
 export default function ShoreExcursionsPage() {
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Klaipėda Shore Excursions", description: "Klaipėda shore excursions for cruise passengers.", path: "/shore-excursions" })]} />
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), webPageSchema({ title: "Ways to Spend Your Day in Klaipėda", description: "Compare your Klaipėda port day options.", path: "/shore-excursions" })]} />
       <PhotoHeroBand
         image={excursionsHubImage}
-        eyebrow="Baltic cruise port"
-        title="Klaipėda Shore Excursions"
-        subtitle="Editorial recommendations for every port window — Old Town, Curonian Spit, private tours and relaxed harbour days with honest return-to-ship timing."
+        eyebrow="When you know the kind of day you want"
+        title="How could you spend your day in Klaipėda?"
+        subtitle="Practical templates for different port days — each with our honest take on timing, walking, return confidence, and who it genuinely suits."
         compact
       />
       <section className="section-padding">
         <div className="container-wide">
           <Breadcrumbs items={breadcrumbs} />
           <p className="mb-8 max-w-3xl text-gray-700 leading-relaxed">
-            Every excursion below is evaluated for cruise passengers calling at Klaipėda. Compare duration, editorial badges and return-to-ship confidence, or use our{" "}
-            <Link href="/best-klaipeda-shore-excursions" className="font-medium text-coastal-700 hover:underline">best excursions guide</Link>{" "}
-            to narrow your choice.
+            These pages exist to help you decide — not to rush you into booking. Read the editorial note on each, check the return-to-ship snapshot, and use our{" "}
+            <Link href="/klaipeda-city-vs-curonian-spit" className="font-medium text-coastal-700 hover:underline">Old Town vs Curonian Spit guide</Link>{" "}
+            if you&apos;re still weighing the big question.
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {excursions.map((e) => (
