@@ -1,3 +1,4 @@
+import klaipedaSchedule from "./imported-schedules/klaipeda.json";
 import type { ScheduleEntry, ShipSchedulePort } from "./types";
 
 export const schedulePorts: ShipSchedulePort[] = [
@@ -29,7 +30,7 @@ export const schedulePorts: ShipSchedulePort[] = [
 ];
 
 const schedules: Record<string, ScheduleEntry[]> = {
-  klaipeda: [],
+  klaipeda: klaipedaSchedule as ScheduleEntry[],
 };
 
 export function getScheduleEntries(slug: string): ScheduleEntry[] {
